@@ -2,31 +2,13 @@
 
 This module aims to serialize your data into `application/x-www-form-urlencoded` encode.
 
-## Install and Usage
+## Install
 
 ```
 npm i --save fast-formdata-stringify
 ```
 
-```js
-var fastFormDataStringify = require('fast-formdata-stringify')
-var schema = getJsonSchema() // fetching the json schema
-var payload = getPayload() // get payload for serialization
-
-var serializer = fastFormDataStringify(schema)
-var str = serializer(payload)
-```
-
 *NB:* this project is not ready for a production usage. Some feature misses. (Please PR!)
-
-## Why ?
-
-`json` is a very useful format: it is readable and a pretty fast format.
-But the serialization is very slow. In **some circumstance** `application/x-www-form-urlencoded`
-performs better.
-
-See [benchmark](#benchmark)
-
 
 <a name="example"></a>
 ## Example
@@ -61,6 +43,13 @@ console.log(stringify({
 }))
 ```
 
+## Why ?
+
+`json` is a very useful format: it is readable and a pretty fast format.
+But the serialization is very slow. In **some circumstance** `application/x-www-form-urlencoded`
+performs better.
+
+See [benchmark](#benchmark)
 
 <a name="benchmark"></a>
 ## Benchmark

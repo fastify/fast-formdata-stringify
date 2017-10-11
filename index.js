@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = stringify
+module.exports = stringifyWrapper
 
 function ObjectPath (chain) {
   this.chain = chain || []
@@ -20,7 +20,7 @@ ObjectPath.prototype.getKey = function () {
   return $escape(key)
 }
 
-function stringify (schema) {
+function stringifyWrapper (schema) {
   var code = []
   code.push(`'use strict'`)
   code.push(`var AMP = '&'`)
