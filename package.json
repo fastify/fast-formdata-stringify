@@ -1,0 +1,38 @@
+{
+  "name": "fast-formdata-stringify",
+  "version": "0.1.0",
+  "description": "`application/x-www-form-urlencoded` stringify",
+  "main": "index.js",
+  "devDependencies": {
+    "fast-json-stringify": "^0.13.1",
+    "fastbench": "^1.0.1",
+    "form-urlencoded": "^2.0.4",
+    "pre-commit": "^1.2.2",
+    "protobufjs": "^6.8.0",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3",
+    "tap": "^10.7.2"
+  },
+  "scripts": {
+    "benchmark": "node benchmark.js",
+    "lint": "standard | snazzy",
+    "unit": "tap test.js",
+    "test": "npm run lint && npm run unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fastify/fast-formdata-stringify.git"
+  },
+  "keywords": [
+    "stringify",
+    "fast",
+    "schema",
+    "form"
+  ],
+  "author": "Tommaso Allevi <tomallevi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fastify/fast-formdata-stringify/issues"
+  },
+  "homepage": "https://github.com/fastify/fast-formdata-stringify#readme"
+}
