@@ -71,6 +71,13 @@ benchFastJsonStringify*100000: 38.176ms
 benchFastDataForm*100000: 33.031ms
 ```
 
+## TODO
+
+Some features miss:
+- implement all `type` supported by jsonschema
+- implement indexed array elements (`key1[0]=value1`)
+
+Please PR!
 
 <a name="acknowledgements"></a>
 ## Acknowledgements
